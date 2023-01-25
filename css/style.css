@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+.body{
+/*	//background-image: url(""file:///C:/xampp/htdocs/BUDGET/images/dark_stripes.jpg"")*/
+/*	background-color: ;*/
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	
+}
+
+
+.body_section{
+/*	border: solid;*/
+	height: 900px;
+	padding: 1%;
+	overflow-y: scroll;
+}
+ 
+.glass {
+
+  position: relative;
+  background: inherit;
+  overflow: hidden;
+  width: 100%;
+/*  height: 100%;*/
+  border-radius: 5px;
+/*	background-color: cornflowerblue;*/
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 3.3), 
+              0 6px 20px rgba(0, 0, 0, 3.15);
+   /*z-index: 1;*/
+	padding: 20px;
+	overflow: hidden;
+}
+
+.glass:before {
+	
+/*  content: '';*/
+  position: absolute;
+  background: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+/*  margin: -20px;*/
+  box-shadow: inset 0 0 500px rgba(255, 255, 255, 1.4); 
+  filter: blur(150px);
+/*   z-index: -1; */
+}
+/*
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    yellow 0%,
+    black 29%,
+    white 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ transition: 3s;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+*/
+
+
+.left_section
+
+{
+  background-color: transparent;  
+  height: 100%;  
+  background-position: right;   
+/*  background-repeat: no-repeat;   */
+/*  background-size: cover;  */
+  background-image: url("../images/padded.jpg") ;
+ } 
+
+/*
+.left_section
+
+{
+  background-color: transparent;  
+  height: 100%;  
+  background-position: right;   
+  background-repeat: no-repeat;   
+  background-size: cover;  
+  background-image: url("../images/ceylinco-vip.png") ;
+ } 
+*/
+
+ 
+ .sidenav {
+  height: 100%;
+  width: 25%px;
+/*  position: fixed;*/
+  z-index:1;
+  top: 0;
+  left: 0;
+  background-color: #888888;
+  overflow-x: hidden;
+  padding-top: 8px;
+  font-weight: 	1900px;
+  font-weight: bold;
+/*	 padding: 5px*/
+ 
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 14px;
+/*  font-weight: 	1900px;*/
+  color: black;
+  display: block;
+  cursor: pointer;
+/*
+ border: solid;
+border-radius: 	50px;
+border-spacing: 2px;
+background-color: yellow;
+*/
+border-radius: 8px;	
+/*	border-top:    1px solid  #ff0;*/
+/*border-right:  2px dashed #f0F;*/
+border-bottom:    1px solid  #ff0;
+/*border-left:   5px solid  #09f;*/
+}
+
+.sidenav a:hover {
+    color: yellow;
+	background-color: dimgray;
+	transform: translateX(2px);  
+    transition: transform 0.50s;
+	border-radius: 8px;
+	 
+}
+
+/*
+.sidenav a:active {
+border-radius: 5px;
+background-color: yellow;
+color: black;	 
+}
+*/
+
+.sidenav .active {
+  background-color: yellow;
+  color: black;
+	border-radius: 6px;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/*
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 18px;}
+	
+}
+*/
+
+/* CSS Document */
+	
+ul {
+    list-style-type: none;
+}
+ 
+	
+	.main_section{
+	border-left: dashed;
+    border: 6px;	
+    border-left-color: black;
+	height: 100%;
+		
+	}	
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 100%}
+    
+    /* Set gray background color and 100% height */
+     
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 5px;
+      }
+      .row.content {height:auto;} 
+    }
+
+
+
+
+ 
